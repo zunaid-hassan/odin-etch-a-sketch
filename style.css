@@ -39,17 +39,20 @@ footer {
   border-radius: 5px;
   width: 20px;
   height: 20px;
+  background-color: white;
 }
 
 .grid-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border: 2px solid slategray;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
-  gap: 5px;
+  gap: 2px;
+  background-color: beige;
 }
 
 ::selection {
@@ -57,3 +60,9 @@ footer {
   background: #ce7e5a;
   font-family: "Times New Roman", Times, serif;
 }
+
+/* colors
+#D34E4E
+#F9E7B2
+#DDC57A
+#CE7E5A */
