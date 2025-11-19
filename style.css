@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  box-sizing: content-box;
   /* outline: 1px solid blue; */
 }
 
@@ -25,6 +24,10 @@ hr {
   color: #d34e4e;
 }
 
+button {
+  padding: 10px;
+}
+
 footer {
   margin-top: auto;
   background-color: #d34e4e;
@@ -33,26 +36,40 @@ footer {
   padding: 10px;
 }
 
-.grid {
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-cell {
   border: 1px solid grey;
-  padding: 10px;
-  border-radius: 5px;
-  width: 20px;
-  height: 20px;
+  border-radius: 2px;
+  /* width: 20px;
+  height: 20px; */
+  /* flex-shrink: 0; */
   background-color: white;
+  box-sizing: border-box;
 }
 
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
   border: 2px solid slategray;
-  padding: 5px;
+  flex-shrink: 0;
   margin: 10px;
   border-radius: 5px;
-  gap: 2px;
   background-color: beige;
+  height: 600px;
+  width: 600px;
+  box-sizing: content-box;
+}
+
+.grid-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 ::selection {
