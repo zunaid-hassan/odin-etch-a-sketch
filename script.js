@@ -72,7 +72,7 @@ function colorGrid(event) {
     return;
   }
   // Set colour change transition duration
-  target.style.transitionDuration = "0.1s";
+  // target.style.transitionDuration = "0.05s";
 
   //   Get randomized RGB values
   let r = Math.ceil(256 * Math.random());
@@ -80,5 +80,5 @@ function colorGrid(event) {
   let b = Math.ceil(256 * Math.random());
 
   //   target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-  target.style.backgroundColor = `lightgray`;
+  target.style.backgroundColor = `darkgray`;
 }
